@@ -10,10 +10,8 @@ class Director:
         self.score = 0
         self.total_score = 0
 
-        # Replace the following code bellow
-        for i in range(5):
-            die = Die()
-            self.dice.append(die)
+        die = Die()
+        self.dice.append(die)
 
     def start_game(self):
 
