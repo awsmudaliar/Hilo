@@ -5,6 +5,7 @@ class Director:
 
     def __init__(self):
 
+        self.dice = []
         self.is_playing = True
         self.score = 0
         self.total_score = 0
