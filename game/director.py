@@ -1,5 +1,4 @@
 from game.die import Die
-import random
 
 class Director:
 
