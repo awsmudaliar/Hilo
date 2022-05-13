@@ -37,7 +37,6 @@ class Director:
         self.value = Die.roll()
        
     def do_updates(self):
-
         # Evaluates the card and the user input for points
         if self.hilorequest == "H":
             if self.value > self.previous_value:
