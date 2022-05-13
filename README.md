@@ -16,6 +16,6 @@ Project structure:
 Required software
 
 Team member names and email addresses
-Alex M
+Alex M awsmudaliar@byui.edu
 Peter Babcock peterb@saefl.com
 Rachel Knight kni21003@byui.edu
