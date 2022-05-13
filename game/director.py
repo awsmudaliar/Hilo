@@ -32,6 +32,9 @@ class Director:
         print(f"Score: {self.total_score}\n")
 
     def get_inputs(self):
+        # chooses card
+        self.value = Die.roll()
+
         # Get input for hi/lo
         print(f"Current Value is: {self.previous_value}")
         self.hilorequest = input("Higher or Lower (H/L): ")
@@ -42,20 +45,20 @@ class Director:
         if not self.is_playing:
             return 
 
-        self.value = Die.roll()
 
         # Evaluate the card
-        if self.hilorequest == "h" or "H":
+        if self.hilorequest == "H":
             if self.value > self.previous_value:
                 self.points = 100
             else:
                 self.points = -75
-        elif self.hilorequest == "l" or "L":
+        elif self.hilorequest == "L":
             if self.value < self.previous_value:
                 self.points = 100
             else:
                 self.points = -75
 
+        self.total_score += self.points
 
     def do_outputs(self):
 
@@ -64,8 +67,10 @@ class Director:
         
         values = ""
         self.score = 0
-        self.value = self.previous_value
 
         print(f"You rolled: {self.value}")
         print(f"Your score is: {self.total_score}\n")
-        self.is_playing == (self.score > 0)
+
+        if self.total_score > 0:
+                print("Game over looser")
+                exit
