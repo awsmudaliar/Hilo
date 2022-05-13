@@ -5,14 +5,9 @@ class Director:
 
     def __init__(self):
         # Initiates all the variables
-        self.dice = 0
         self.is_playing = True
-        self.value = 0
-        self.score = 0
         #Player starts with 300 points
         self.total_score = 300
-        self.hilorequest = ""
-        self.previous_value = 0
 
     def start_game(self):
         print ("Welcome to Hi/Lo")
