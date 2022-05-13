@@ -15,9 +15,6 @@ class Director:
         self.previous_value = 0
 
     def start_game(self):
-        #self.previous_value = random.randint(1,13)
-        self.previous_value = Die.roll()
-
         print ("Welcome to Hi/Lo")
         print()
         input("Press Enter to Start...") 
@@ -37,12 +34,12 @@ class Director:
     # Creates random card for user
     def get_inputs(self):
         # chooses card
-        self.value = Die.roll()
+        self.previous_value = Die.roll()
 
         # Get input for hi/lo
         print(f"Current Value is: {self.previous_value}")
         self.hilorequest = input("Higher or Lower (H/L): ")
-
+        self.value = Die.roll()
        
     def do_updates(self):
 
