@@ -73,3 +73,8 @@ class Director:
 
         if self.total_score < 1:
             self.is_playing = False
+        else:
+            player_continue = input("Do you want to keep playing (Y/N): ")
+
+            if player_continue == "N":
+                self.is_playing = False
