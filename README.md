@@ -9,12 +9,14 @@ How did you apply abstraction in your program's design?
 We took the complex coding solution of developing the Hi-Low game and applied abtraction to our design by creating classes that simplied the process.
 
 Week 4(Additions)
-Title:
+Title: 
 Description:
 Project structure:
 
-Required software
-
+Required software: 
+  python v3.10.4 
+  import random
+  
 Team member names and email addresses
 Alex M awsmudaliar@byui.edu
 Peter Babcock peterb@saefl.com
