@@ -21,7 +21,6 @@ class Director:
             print()
             self.get_inputs()
             self.do_updates()
-            self.do_outputs()
         
         # Ending Printout
         print()
@@ -54,14 +53,6 @@ class Director:
         # adds points to score
         self.total_score += self.points
 
-    # Determines if player is eligible to play
-    def do_outputs(self):
-        if not self.is_playing:
-            return
-        
-        values = ""
-        self.score = 0
-
     # Prints the score and card rolled
         print(f"Your card is: {self.value}")
         print(f"Your score is: {self.total_score}\n")
@@ -72,6 +63,5 @@ class Director:
         else:
             player_continue = input("Do you want to keep playing (Y/N): ")
             print(chr(27) + "[2J")
-            
             if player_continue == "N":
                 self.is_playing = False
