@@ -21,6 +21,7 @@ class Director:
             print()
             self.get_inputs()
             self.do_updates()
+            self.do_outputs()
         
         # Ending Printout
         print()
@@ -53,9 +54,13 @@ class Director:
         # adds points to score
         self.total_score += self.points
 
+    def do_outputs(self):
     # Prints the score and card rolled
         print(f"Your card is: {self.value}")
         print(f"Your score is: {self.total_score}\n")
+
+        values = ""
+        self.score = 0
 
     # Determines if player has enough points or if player wants to play
         if self.total_score < 1:
