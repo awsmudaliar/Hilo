@@ -9,9 +9,12 @@ class Director:
         self.total_score = 300
 
     def start_game(self):
+        print(chr(27) + "[2J")
         print ("Welcome to Hi/Lo")
         print()
         input("Press Enter to Start...") 
+        print(chr(27) + "[2J")
+
 
         # Game play loop
         while self.is_playing:
@@ -22,6 +25,7 @@ class Director:
         
         # Ending Printout
         print()
+        print(chr(27) + "[2J")
         print("Thanks for Playing")
         print(f"Score: {self.total_score}\n")
 
@@ -67,6 +71,7 @@ class Director:
             self.is_playing = False
         else:
             player_continue = input("Do you want to keep playing (Y/N): ")
-
+            print(chr(27) + "[2J")
+            
             if player_continue == "N":
                 self.is_playing = False
