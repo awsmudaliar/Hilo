@@ -22,15 +22,19 @@ Object 1: director
 Class: Director
 This class will have 5 modules
 Init: this will used to give some variable default values
+
 Start_Game: This has 3 sections 
   1) Welcome new players
   2) A loop that will keep running the game until ther player quits or loses
   3) Thanking the player for playing and displaying their final scores
+
 Get_inputs: this will get all the inputs needed to run the game
   1) The inital number, which the player will use to guess if the next number will be higher or lower
   2) the players guess High or Low
   3) The number that will be compated to the inital number
+
 do_updates: This is used to evaluate the players guess and to assign points based on if the players guess correct or incorrect
+
 do_outputs: This does 3 things
   1)prints out the card that was draw and shows the user there current scored
   2) determines if the player can keep player based on the current score (must have more than zero points)]]
