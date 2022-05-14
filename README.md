@@ -1,16 +1,15 @@
-# Hilo (updated)
-H**ow did you apply abstraction in your program's design?**
+How did you apply abstraction in your program's design?
 We took the complex coding solution of developing the Hi-Low game and applied abtraction to our design by creating classes that simplied the process.
 
 Title: Project Team 1: HI/LOW
-**Description: **
+Description: 
 Hilo is a game in which the player guesses if the next card drawn by the dealer will be higher or lower than the previous one. Points are won or lost based on whether or not the player guessed correctly.
 
-**Required software: **
+Required software: 
   - python v3.10.4 
   - import random
   
-**Project structure: **  
+Project structure:   
 Design Plan
 Object 1: director
 Class: Director
