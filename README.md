@@ -36,7 +36,7 @@ Get_inputs: this will get all the inputs needed to run the game
 do_updates: This is used to evaluate the players guess and to assign points based on if the players guess correct or incorrect
 
 do_outputs: This does 3 things
-  1)prints out the card that was draw and shows the user there current scored
+  1) prints out the card that was draw and shows the user there current scored
   2) determines if the player can keep player based on the current score (must have more than zero points)]]
   3) asks the user if they would like to carry on players
 
